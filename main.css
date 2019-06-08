@@ -1,0 +1,127 @@
+body{
+    scroll-behavior: smooth;
+}
+
+body
+{
+    background-color: #212121;
+    background-image:url('Kbg.png');
+    background-position: center;
+    font-family: 'Archivo', sans-serif;
+    height:100%;
+    width:100%;
+}
+nav
+{
+    background-color:transparent;
+    box-shadow: none;
+    line-height:64px;
+    height:64px;
+    position:fixed;
+    top:0px;
+    left:0px;
+}
+.brand-logo
+{
+    margin:0px 20px;
+}
+.Kmenu
+{
+    float:right;
+    margin:0px 20px;
+}
+.kcontainer-scrollable
+{
+    width: 300%;
+    margin-top:5%;
+    scroll-snap-type: x proximity;
+}
+.Kintro
+{
+    color:white;
+}
+.Kintro h3, .Kintrocontainer h3{
+    color:white;
+    font-family: 'Archivo-SemiBold',sans-serif;
+}
+.Kintro h6{
+    letter-spacing: 2px;
+    font-size:14px;
+    color:#b7b7b7;
+    font-family: 'Archivo-Medium',sans-serif;
+}
+.KintroBtn,.KnavBtn
+{
+    margin:5% 0px;
+    color:black;
+    background-color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+.KnavBtn
+{
+    color:white;
+    background-color: #a63d55;
+    margin:10px;
+    float:right;
+}
+.KintroBtn:hover, .KintroBtn:focus{
+    background-color:#a63d55;
+    color:white;
+}
+.KnavBtn:hover, .KnavBtn:focus{
+    background-color:white;
+    color:black;
+}
+.page-footer
+{
+    background-color: transparent;
+}
+.Ksocial-icons
+{
+    display: inline-flex;
+}
+.Ksocial-icons a{
+    margin:0px 10px;
+    padding:10px;
+}
+.page-footer .container
+{
+    width:100%;
+    position:fixed;
+    bottom:0px;
+    left:0px;
+
+}
+/* scrollable section */
+.Ksecton1, .Ksecton2
+{
+    margin:0px;
+    float:left;
+}
+.Kintrocontainer
+{
+    width:90%;
+}
+.KexpertiseCards .block
+{
+    width:350px;
+    display: inline-block;
+    background-color:white;
+    margin:0px;
+    padding: 20px;
+    float:left;
+}
+.dualcard
+{
+    display: inline-block;
+    margin:20px;
+    float:left;
+}
+@media(max-width:768px)
+{
+    .Ksecton2 .block{
+        max-width:300px;
+    }
+}
+
