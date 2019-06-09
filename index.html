@@ -1,174 +1,192 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <!-- Materiaize css -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-        <link rel="stylesheet" href="main.css">
-        <!-- archivo font -->
-        <link href="https://fonts.googleapis.com/css?family=Archivo&display=swap" rel="stylesheet">
-        <!-- jQuery cdn -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
-        <!-- scroll reveal animation lib -->
-        <script src="https://unpkg.com/scrollreveal"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    </head>
-    <body>
-            <!-- sticky individual navigation -->
-            <nav>
-                <div>
-                    <a href="#" class="brand-logo">
-                        kebuik
+<head>
+    <!-- Materiaize css -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <!-- fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Archivo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo&display=swap" rel="stylesheet">
+
+    <!-- tween max javascript library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+    <!-- jQuery cdn -->
+
+
+    <!-- custom css and javascript -->
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+
+</head>
+
+<body>
+    <!-- sticky individual navigation -->
+    <nav class="animate-reveal">
+        <div>
+            <a href="#" class="brand-logo">
+                        <img src="keubiklogo.png" class="responsive-img" width="100px" height="auto" style="vertical-align:middle">
                     </a>
-                    
-                    <i class="material-icons Kmenu">dehaze</i>
-                    <a class="waves-effect btn-small KnavBtn">Get In Touch</a>
+            <a href="#" data-target="slide-out" class="sidenav-trigger waves-effect"><i class="material-icons Kmenu">dehaze</i></a>
+            <a class="waves-effect btn-small KnavBtn hide-on-med-and-down">Get In Touch</a>
+        </div>
+    </nav>
+    <!-- side navigation bar -->
+    <ul id="slide-out" class="sidenav">
+        <i class="material-icons" id="sidebar-close">close</i>
+        <li><a href="#" class="waves-effect">Home</a></li>
+        <li><a href="#!" class="waves-effect">About us </a></li>
+        <li><a href="#!" class="waves-effect">Expertise</a></li>
+        <li><a href="#!" class="waves-effect">Mentors</a></li>
+        <li><a href="#!" class="waves-effect">Culture</a></li>
+        <li class="Knavigationsocial">
+           
+            <div class="Ksocial-icons">
+                <a href="#"><img src="facebook-letter-logo.svg" class="responsive-img"></a>
+                <a href="#"><img src="twitter-logo-silhouette.svg" class="responsive-img"></a>
+                <a href="#"><img src="linkedin-letters.svg" class="responsive-img"></a>
+                <a href="#"><img src="angellistlogo.png" class="responsive-img"></a>
+                <a href="#"><img src="placeholder-filled-point.svg" class="responsive-img"></a>
+            </div>
+            <a class="grey-text text-lighten-4 " href="#!">PRIVACY AND TERMS</a>
+        </li>
+    </ul>
+    <!-- scrollable section of the page starts -->
+    <div class="kcontainer-scrollable" style="display:flex;">
+        <!-- main intro section -->
+        <div class="sections Ksecton1 container row" id="section1">
+            <div class="col xl6 l6 m6 s12 Kintro-para">
+                <div class="  Kintro ">
+                    <h3>
+                        Transforming Ideas<br>
+                        Using Technology
+                    </h3>
+                    <h6 class="  openingPara">
+                        Seeing our clients passionate about their idea excites us. We always look for new ways to provide solutions and create a better product
+                    </h6>
+                    <a class="waves-effect btn-small KintroBtn slidereveal openingbtn">View Our Services</a>
                 </div>
-            </nav>
-            <!-- scrollable section of the page starts -->
-            <div class="kcontainer-scrollable">
-                <!-- main intro section -->
-                <div class="Ksecton1 container row ">
-                    <div class="Kintrocontainer container">
-                        <div class="col xl6 l6 m6 s12">
-                            <div class="Kintro">
-                                <h3 class="slidereveal">
-                                    Transforming Ideas<br>
-                                    Using Technology
-                                </h3>
-                                <h6 class="slidereveal">
-                                    Seeing our clients passionate about their idea excites us. We always look for new ways to provide solutions and create a better product
-                                </h6>
-                                <a class="waves-effect btn-small KintroBtn slidereveal">View Our Services</a>
-                            </div>
+            </div>
+            <div class="col xl6 l6 m6 s12 landing-page-logo-col">
+                <img src="logo-keubik@3x.png" class="landing-page-logo-img  responsive-img">
+            </div>
+        </div>
+        <!-- services  -->
+        <div class="sections Ksecton1 container row" id="section2">
+            <div class="section2-elements">
+                <h3>
+                    Our Expertise
+                </h3>
+            </div>
+            <div class="cards-flex">
+                <div class="section2-elements ow booklet-card">
+                    <div class="col xl6 l6 m6 s12 card-first">
+                        <div class="card-heading">
+                            Software Engineering
                         </div>
-                        <div class="col xl6 l6 m6 s12 slidereveal">
-                            <img src="logo-keubik@3x.png" class="responsive-img">
+                        <div class="card-body">
+                            Keubik delivers a spectrum of software products and solutions on a retail and enterprise level. As your partners, we promote that Innovation is the impetus to growth and efficiency. We believe in innovating with our clients every step of the way in order to thrust them to the forefront of their industry. How we do it:
+                        </div>
+                        <div class="card-footer">
+                            <a class="waves-effect btn-small KnavBtn">
+                                Request a Session
+                            </a>
                         </div>
                     </div>
-                </div>
-                <!-- services  -->
-                <div class="Ksection2 row">
-                    <div class="Kintrocontainer ">
-                        <h3 class="slidereveal">Our Expertise</h3>
-                        <div class="KexpertiseCards">
-                            <div class="dualcard">
-                                <div class="block slidereveal">
-                                    <div>
-                                        <div class="card white lighten-1">
-                                        <div class="card-content black-text">
-                                            <span class="card-title">Software Engineering</span>
-                                            <p>
-                                                Keubik delivers a spectrum of software products and solutions on a retail and enterprise level. As your partners, we promote that Innovation is the impetus to growth and efficiency. We believe in innovating with our clients every step of the way in order to thrust them to the forefront of their industry. How we do it:
-                                            </p>
-                                        </div>
-                                        <div class="card-action">
-                                            <a href="#" class="btn waves-effect btn-small">Request a session</a>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="block slidereveal">
-                                        <div>
-                                            <div class="card white lighten-1">
-                                            <div class="card-content black-text">
-                                                <span class="card-title">Software Engineering</span>
-                                                <p>
-                                                    Keubik delivers a spectrum of software products and solutions on a retail and enterprise level. As your partners, we promote that Innovation is the impetus to growth and efficiency. We believe in innovating with our clients every step of the way in order to thrust them to the forefront of their industry. How we do it:
-                                                </p>
-                                            </div>
-                                            <div class="card-action">
-                                                <a href="#" class="btn waves-effect btn-small">Request a session</a>
-                                            </div>
-                                            </div>
-                                        </div>
-                                </div>
+                    <div class="col xl6 l6 m6 s12 card-second">
+                        <div class="card-list">
+                            <div class="subhead">
+                                Build tailor-made software solutions
                             </div>
-                           <div class="dualcard">
-                                <div class="block slidereveal">
-                                        <div>
-                                            <div class="card white lighten-1">
-                                            <div class="card-content black-text">
-                                                <span class="card-title">Software Engineering</span>
-                                                <p>
-                                                    Keubik delivers a spectrum of software products and solutions on a retail and enterprise level. As your partners, we promote that Innovation is the impetus to growth and efficiency. We believe in innovating with our clients every step of the way in order to thrust them to the forefront of their industry. How we do it:
-                                                </p>
-                                            </div>
-                                            <div class="card-action">
-                                                <a href="#" class="btn waves-effect btn-small">Request a session</a>
-                                            </div>
-                                            </div>
-                                        </div>
-                                </div>
-                                <div class="block slidereveal">
-                                        <div>
-                                            <div class="card white lighten-1">
-                                            <div class="card-content black-text">
-                                                <span class="card-title">Software Engineering</span>
-                                                <p>
-                                                    Keubik delivers a spectrum of software products and solutions on a retail and enterprise level. As your partners, we promote that Innovation is the impetus to growth and efficiency. We believe in innovating with our clients every step of the way in order to thrust them to the forefront of their industry. How we do it:
-                                                </p>
-                                            </div>
-                                            <div class="card-action">
-                                                <a href="#" class="btn waves-effect btn-small">Request a session</a>
-                                            </div>
-                                            </div>
-                                        </div>
-                                </div> 
-                           </div>
+                            <div class="subbody">
+                                Proprietary software fortifies your organization in terms of technology.
+                            </div>
                         </div>
+                        <div class="card-list">
+                            <div class="subhead">
+                                BAchieve Go-to-market
+                            </div>
+                            <div class="subbody">
+                                We will help you release great software against tight schedules to meet the ever-growing customer expectations
+                            </div>
+                        </div>
+                        <div class="card-list">
+                            <div class="subhead">
+                                Use Frontier Technology
+                            </div>
+                            <div class="subbody">
+                                Proprietary software fortifies your organization in terms of technology.
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="section2-elements row booklet-card">
+                    <div class="col xl6 l6 m6 s12 card-first">
+                        <div class="card-heading">
+                            Software Engineering
+                        </div>
+                        <div class="card-body">
+                            Keubik delivers a spectrum of software products and solutions on a retail and enterprise level. As your partners, we promote that Innovation is the impetus to growth and efficiency. We believe in innovating with our clients every step of the way in order to thrust them to the forefront of their industry. How we do it:
+                        </div>
+                        <div class="card-footer">
+                            <a class="waves-effect btn-small KnavBtn">
+                                Request a Session
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col xl6 l6 m6 s12 card-second">
+                        <div class="card-list">
+                            <div class="subhead">
+                                Build tailor-made software solutions
+                            </div>
+                            <div class="subbody">
+                                Proprietary software fortifies your organization in terms of technology.
+                            </div>
+                        </div>
+                        <div class="card-list">
+                            <div class="subhead">
+                                BAchieve Go-to-market
+                            </div>
+                            <div class="subbody">
+                                We will help you release great software against tight schedules to meet the ever-growing customer expectations
+                            </div>
+                        </div>
+                        <div class="card-list">
+                            <div class="subhead">
+                                Use Frontier Technology
+                            </div>
+                            <div class="subbody">
+                                Proprietary software fortifies your organization in terms of technology.
+                            </div>
+                        </div>
+
                     </div>
                 </div>
             </div>
 
-            
-
-           
-            <!--sticky individual footer -->
-            <footer class="page-footer">
-                <div class="footer-copyright">
-                    <div class="container" >
-                        <div class="Ksocial-icons">
-                            <a href="#"><img src="facebook-letter-logo.svg" class="responsive-img"></a>
-                            <a href="#"><img src="twitter-logo-silhouette.svg" class="responsive-img"></a>
-                            <a href="#"><img src="linkedin-letters.svg" class="responsive-img"></a>
-                            <a href="#"><img src="angellistlogo.png" class="responsive-img"></a>
-                            <a href="#"><img src="placeholder-filled-point.svg" class="responsive-img"></a>
-                        </div>
-                        <a class="grey-text text-lighten-4 right" href="#!">PRIVACY AND TERMS</a>
-                    </div>
+        </div>
+    </div>
+    <!--sticky individual footer -->
+    <footer class="page-footer animate-reveal">
+        <div class="footer-copyright">
+            <div class="container">
+                <div class="Ksocial-icons">
+                    <a href="#"><img src="facebook-letter-logo.svg" class="responsive-img"></a>
+                    <a href="#"><img src="twitter-logo-silhouette.svg" class="responsive-img"></a>
+                    <a href="#"><img src="linkedin-letters.svg" class="responsive-img"></a>
+                    <a href="#"><img src="angellistlogo.png" class="responsive-img"></a>
+                    <a href="#"><img src="placeholder-filled-point.svg" class="responsive-img"></a>
                 </div>
-            </footer>
-        </body>
-
-    <script type="text/javascript">
-        function scrollHorizontally(e) {
-            // e.preventDefault();
-            e = window.event || e;
-            var delta = Math.max(-1, Math.min(1, (e.wheelDelta || -e.detail)));
-            var scrollSpeed = 60; 
-            document.documentElement.scrollLeft -= (delta * scrollSpeed);
-            document.body.scrollLeft -= (delta * scrollSpeed);
-            
-        }
-
-        if (window.addEventListener) {
-            // IE9, Chrome, Safari, Opesra
-            window.addEventListener("mousewheel", scrollHorizontally, false);
-            // Firefox
-            window.addEventListener("DOMMouseScroll", scrollHorizontally, false);
-            } else {
-            // IE 6/7/8
-            window.attachEvent("onmousewheel", scrollHorizontally);
-        }
-        // scroll animation
-        var slideUp = {
-            distance: '150%',
-            origin: 'bottom',
-            opacity: null
-        };
-
-        ScrollReveal().reveal('.slidereveal', slideUp);
-    </script>
+                <a class="grey-text text-lighten-4 right terms-condition" href="#!">PRIVACY AND TERMS</a>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

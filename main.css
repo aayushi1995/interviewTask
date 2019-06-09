@@ -1,6 +1,3 @@
-body{
-    scroll-behavior: smooth;
-}
 
 body
 {
@@ -20,6 +17,22 @@ nav
     position:fixed;
     top:0px;
     left:0px;
+    padding: 10px 20px;
+}
+#slide-out
+{
+    width: 500px;
+    background-color: #212121;
+    background-image: url(Kbg.png);
+}
+.sidenav li > a
+{
+    color: white;
+    font-size: 24px;
+    padding: 20px 30px;
+    line-height: initial;
+    height: auto;
+    font-family: 'Archivo',sans-serif;
 }
 .brand-logo
 {
@@ -30,17 +43,11 @@ nav
     float:right;
     margin:0px 20px;
 }
-.kcontainer-scrollable
-{
-    width: 300%;
-    margin-top:5%;
-    scroll-snap-type: x proximity;
-}
 .Kintro
 {
     color:white;
 }
-.Kintro h3, .Kintrocontainer h3{
+.Kintro h3 , .Ksecton1 h3{
     color:white;
     font-family: 'Archivo-SemiBold',sans-serif;
 }
@@ -50,7 +57,7 @@ nav
     color:#b7b7b7;
     font-family: 'Archivo-Medium',sans-serif;
 }
-.KintroBtn,.KnavBtn
+.KintroBtn, .KnavBtn
 {
     margin:5% 0px;
     color:black;
@@ -62,7 +69,12 @@ nav
 {
     color:white;
     background-color: #a63d55;
-    margin:10px;
+    margin:15px 10px;
+    float:right;
+}
+nav a.sidenav-trigger
+{
+    display:block !important;
     float:right;
 }
 .KintroBtn:hover, .KintroBtn:focus{
@@ -91,37 +103,215 @@ nav
     position:fixed;
     bottom:0px;
     left:0px;
+    max-width: 100% !important;
+    padding: 0px 20px;
 
 }
-/* scrollable section */
-.Ksecton1, .Ksecton2
+.Ksecton1
 {
-    margin:0px;
-    float:left;
+    width: 85% !important;
+    margin-top:5%;
+    height:auto;
+    width:auto;
 }
-.Kintrocontainer
+#section1
 {
-    width:90%;
+    margin-top:10%;
 }
-.KexpertiseCards .block
+.animate-reveal
 {
-    width:350px;
-    display: inline-block;
-    background-color:white;
-    margin:0px;
-    padding: 20px;
-    float:left;
+    opacity: 1;
 }
-.dualcard
+.booklet-card
 {
-    display: inline-block;
+    width: 700px;
+    background:#ececec;    ;
+    margin-left: 0px;
     margin:20px;
-    float:left;
+}
+.booklet-card .card-first, .card-second
+{
+    padding: 30px !important;
+   
+}
+.booklet-card .card-second{
+    padding: 10% 30px !important;
+}
+.booklet-card .card-heading
+{
+    padding-top: 10px;
+    font-size: 32px;
+    font-family: 'Archivo SemiBold',sans-serif;
+}
+.booklet-card .card-body
+{
+    padding:20px 0px;
+    font-family: 'Cardo-Regular',serif;
+}
+.booklet-card .card-first{
+    background-color:white;
+}
+.booklet-card .card-list
+{
+    padding-bottom:10%;
+}
+.booklet-card .subhead{
+    font-family: 'Archivo SemiBold',sans-serif;
+    font-weight: 800 !important;
+
+}
+.booklet-card .subbody{
+    font-family: 'Cardo-Regular',serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+.cards-flex
+{
+    display: flex;
+    width:150%;
+}
+#section1
+{
+    display: block;
+    opacity: 1;
+    position: relative;
+    left:0px;
+}
+
+#section2
+{
+    display:none;
+    opacity: 1;
+    position: relative;
+    left:0px;
+}
+.Knavigationsocial
+{
+    position: absolute;
+    bottom:10%;
+}
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.footer-copyright .terms-condition
+{
+    padding: 20px;
+}
+
+#sidebar-close
+{
+    color:white;
+    float:right;
+    font-size:50px;
+    cursor: pointer;
 }
 @media(max-width:768px)
 {
-    .Ksecton2 .block{
-        max-width:300px;
+    nav{
+        background-color: #0000006e;
+        z-index:4;
+        padding:0px;
     }
+    #section1
+    {
+        margin-top:20%;
+    }
+    .Kintro h3 , .Ksecton1 h3
+    {
+        margin-top: 20%;
+        font-size:34px !important;
+    }
+    .brand-logo
+    {
+        left: 0px !important;
+        -webkit-transform: none !important;
+        transform: none !important;
+        font-size:18px !important;
+    }
+    .landing-page-logo-col
+    {
+        position: absolute;
+        opacity: 0.4;
+        text-align: right;
+        margin-top: 20%;
+    }
+    .landing-page-logo-img
+    {
+        width: 50%;
+    }
+    .Ksecton1
+    {
+        margin-top:10%;
+    }
+    #slide-out
+    {
+        padding: 20px;
+        min-width:300px !important;
+    }
+    .sidenav li > a
+    {
+        font-size:34px;
+    }
+    .Kintro h6
+    {
+        margin-top: 30%;
+    }
+    .KintroBtn, .KnavBtn
+    {
+        width:100%;
+        margin:20% 0px;
+    }
+    .Ksocial-icons{
+        display: block;
+        text-align: center;
+        width: 100%;
+        padding:10px;
+    }
+    .footer-copyright
+    {
+        text-align: center;
+    }
+    .footer-copyright .terms-condition
+    {
+        float: none !important;
+        margin: auto;
+    }
+    #section2
+    {
+        display:block;
+        opacity: 1;
+        position: relative;
+        left:0px;
+        z-index:0;
+    }
+    .kcontainer-scrollable
+    {
+        display: block !important;
+    }
+    .cards-flex
+    {
+        display: block;
+        width:100%;
+    }
+    .booklet-card
+    {
+        width:100%;
+        margin:0px;
+    }
+    .page-footer .container
+    {
+        position: relative;
+    }
+    .Knavigationsocial a
+    {
+        font-size: 18px !important;
+        text-align: center;
+    }
+    #sidebar-close
+    {
+        font-size:30px;
+    }
+   
 }
-
