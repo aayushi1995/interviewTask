@@ -2,7 +2,7 @@
 body
 {
     background-color: #212121;
-    background-image:url('Kbg.png');
+    background-image:url('img/Kbg.png');
     background-position: center;
     font-family: 'Archivo', sans-serif;
     height:100%;
@@ -23,7 +23,7 @@ nav
 {
     width: 500px;
     background-color: #212121;
-    background-image: url(Kbg.png);
+    background-image: url('img/Kbg.png');
 }
 .sidenav li > a
 {
