@@ -13,5 +13,3 @@ The folder is divided into 3 parts
 4. images folder
 
 Due to tight deadline may have not commented properly.
-
-Thank you for giving me this opportunity.
